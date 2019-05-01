@@ -1,0 +1,124 @@
+#######################################
+# Syntax Coloring Map For Keyboard
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DeltaRobot	KEYWORD1
+DeltaRobotOne	KEYWORD1
+Button 		KEYWORD1
+Display		KEYWORD1
+DisplayI2C	KEYWORD1
+Encoder		KEYWORD1
+Functions	KEYWORD1
+Gripper		KEYWORD1
+Light		KEYWORD1
+LiveMode	KEYWORD1
+Menu		KEYWORD1
+MotionData	KEYWORD1
+Motion		KEYWORD1
+ExternalMotor	KEYWORD1
+Pos		KEYWORD1
+ServoData	KEYWORD1
+Move		KEYWORD1
+Power		KEYWORD1
+Protocol	KEYWORD1
+Remote		KEYWORD1
+Screen		KEYWORD1
+Space		KEYWORD1
+Kinematics	KEYWORD1
+ServoSetup	KEYWORD1
+ExtMotor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setup		KEYWORD2
+setID		KEYWORD2
+getID		KEYWORD2
+push		KEYWORD2
+release		KEYWORD2
+clicked		KEYWORD2
+clear		KEYWORD2
+printLine1	KEYWORD2
+printLine2	KEYWORD2
+printText	KEYWORD2
+printSign	KEYWORD2
+getValue	KEYWORD2
+setValue	KEYWORD2
+setLimitMin	KEYWORD2
+setLimitMax	KEYWORD2
+getLimitMin	KEYWORD2
+getLimitMax	KEYWORD2
+reset		KEYWORD2
+waitFor		KEYWORD2
+pulse		KEYWORD2
+open		KEYWORD2
+close		KEYWORD2
+getStatus	KEYWORD2
+on		KEYWORD2
+off		KEYWORD2
+setColour	KEYWORD2
+setIntensity	KEYWORD2
+blink		KEYWORD2
+blinkFast	KEYWORD2
+blinkSlow	KEYWORD2
+blinkTime	KEYWORD2
+fade		KEYWORD2
+fadeFast	KEYWORD2
+fadeSlow	KEYWORD2
+fadeReset	KEYWORD2
+heartbeat	KEYWORD2
+start		KEYWORD2
+setItem		KEYWORD2
+stop		KEYWORD2
+getSpeed	KEYWORD2
+setSpeed	KEYWORD2
+control		KEYWORD2
+setupPosition	KEYWORD2
+servosetup	KEYWORD2
+ptp		KEYWORD2
+getPosition	KEYWORD2
+getAngles	KEYWORD2
+bluetoothOn	KEYWORD2
+bluetoothOff	KEYWORD2
+mainOn		KEYWORD2
+mainOff		KEYWORD2
+info		KEYWORD2
+progress	KEYWORD2
+ready		KEYWORD2
+limit		KEYWORD2
+signals		KEYWORD2
+angles		KEYWORD2
+position	KEYWORD2
+Speed		KEYWORD2
+Signs		KEYWORD2
+Colour		KEYWORD2
+Intensity	KEYWORD2
+Pins		KEYWORD2
+ButtonID	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+functions	KEYWORD2
+move		KEYWORD2
+light		KEYWORD2
+display		KEYWORD2
+button		KEYWORD2
+encoder		KEYWORD2
+power		KEYWORD2
+gripper		KEYWORD2
+remote		KEYWORD2
+extmotor	KEYWORD2
+screen		KEYWORD2
+menu		KEYWORD2
+livemode	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
