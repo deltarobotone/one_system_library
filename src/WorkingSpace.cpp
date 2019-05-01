@@ -46,7 +46,7 @@ void DeltaRobot::Move::setStandardLevels()
 
 void DeltaRobot::Move::setWorkingSpaceLevel(int level, float zmin, float zmax, float radius)
 {
-	if (level > 0 && level <= 3)
+	if (level > 0 && level <= 4)
 	{
 		levels[level - 1].radius = radius;
 		levels[level - 1].zmin = zmin;
