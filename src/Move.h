@@ -47,12 +47,9 @@ namespace DeltaRobot
 	{
 	public:
 		Space();
-		int xmin = 0;
-		int xmax = 0;
-		int ymin = 0;
-		int ymax = 0;
-		int zmin = 0;
-		int zmax = 0;
+		float radius = 0.0F;
+		float zmin = 0.0F;
+		float zmax = 0.0F;
 	};
 
 	class Move
@@ -68,7 +65,7 @@ namespace DeltaRobot
 		float deltakinematic(float x, float y, float z, char servo);
 		bool checkWorkingSpace(DeltaRobot::Pos &position);
 		void setStandardLevels();
-		Space levels[3];
+		Space levels[4];
 		Kinematics length;
 
 	public:
@@ -80,7 +77,7 @@ namespace DeltaRobot
 		Pos getPosition();
 		ServoData getAngles();
 		void setKinematicsLength(float lengthA, float lengthB, float lengthC, float lengthD);
-		void setWorkingSpaceLevel(int level, int xmin, int xmax, int ymin, int ymax, int zmin, int zmax);
+		void setWorkingSpaceLevel(int level, float radius, float zmin, float zmax);
 	};
 	static DeltaRobot::Pos home(0.0F, 0.0F, 85.0F);
 }

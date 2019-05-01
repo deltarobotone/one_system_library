@@ -64,7 +64,7 @@ void loop()
 				robot.menu.setItem(1, F("Pick Place SLOW"));
 				robot.menu.setItem(2, F("Pick Place HALF"));
 				robot.menu.setItem(3, F("Pick Place FAST"));
-				robot.menu.setItem(4, F("Pick Place FULL"));
+				robot.menu.setItem(4, F("Pick Place MAX"));
 				robot.menu.setItem(5, F("Circle"));
 				appSelect = robot.menu.start();
 			}
@@ -301,88 +301,79 @@ void circle(DeltaRobot::DeltaRobotOne &robot)
 {
 	robot.light.on(Colour::yellow, Intensity::max);
 
-	float pi = 3.14;
-	float w = (2 * pi) / 2880;
-	float s = 0.0;
-	Pos Position(0.0, 0.0, 100.0);
+  	// This example shows you how to move a circle
 
-	Position.x = 40.0;
-	robot.move.ptp(Position, Speed::half);
+  	//Define pi
+  	float pi = 3.14;
+  
+  	//Calculate the stepwidth
+  	float stepWidth = (2 * pi) / 2880;
+  
+  	//Counter for stepwidth
+  	float stepCounter = 0.0;
+  
+  	//Define circle radius
+  	float circleRadius = 45.0F;
+  
+  	//Create position class object for circle positions
+  	Pos Position(0.0, 0.0, 0.0);
+  
+  	//Set start position
+  	Position.y = 0.0;
+  	Position.x = 45.0;
+  	Position.z = 90.0;
 
-	for (int i = 0; i < 2880; i++)
-	{
-		Position.x = 40.0 * cos(s);
-		Position.y = 40.0 * sin(s);
-		robot.move.ptp(Position, Speed::full);
-		s = s + w;
-	}
+  	//Move with half speed to startposition
+  	robot.move.ptp(Position, Speed::half);
 
-	w = (2 * pi) / 1440;
-	s = 0.0;
+  	//Wait for 1 second
+  	robot.functions.waitFor(1000);
 
-	for (int i = 0; i < 1440; i++)
-	{
-		Position.x = 40.0 * cos(s);
-		Position.y = 40.0 * sin(s);
-		robot.move.ptp(Position, Speed::full);
-		s = s + w;
-	}
+  	//To move the robot on a circle:
+  	//Calculate robot position on X-Axis with cosinus-function
+  	//Calculate robot position on Y-Axis with sinus-function
+  	//Move to positions with full speed
+  	//The robot speed depends on stepwidth in fact of the resolution
+  	for (int i = 0; i < 2880; i++)
+  	{
+    	Position.x = circleRadius * cos(stepCounter);
+    	Position.y = circleRadius * sin(stepCounter);
+    	robot.move.ptp(Position, Speed::full);
+    	stepCounter = stepCounter + stepWidth;
+  	}
 
-	w = (2 * pi) / 720;
-	s = 0.0;
+  	stepWidth = (2 * pi) / 1440;
+  	stepCounter = 0.0;
 
-	for (int i = 0; i < 720; i++)
-	{
-		Position.x = 40.0 * cos(s);
-		Position.y = 40.0 * sin(s);
-		robot.move.ptp(Position, Speed::full);
-		s = s + w;
-	}
+  	for (int i = 0; i < 1440; i++)
+  	{
+    	Position.x = circleRadius * cos(stepCounter);
+    	Position.y = circleRadius * sin(stepCounter);
+    	robot.move.ptp(Position, Speed::full);
+    	stepCounter = stepCounter + stepWidth;
+  	}
 
-	w = (2 * pi) / 720;
-	s = 0.0;
+  	stepWidth = (2 * pi) / 720;
+  	stepCounter = 0.0;
 
-	for (int i = 0; i < 720; i++)
-	{
-		Position.x = 40.0 * cos(s);
-		Position.y = 40.0 * sin(s);
-		robot.move.ptp(Position, Speed::full);
-		s = s + w;
-	}
+  	for (int i = 0; i < 720; i++)
+  	{
+    	Position.x = circleRadius * cos(stepCounter);
+    	Position.y = circleRadius * sin(stepCounter);
+    	robot.move.ptp(Position, Speed::full);
+    	stepCounter = stepCounter + stepWidth;
+  	}
 
-	w = (2 * pi) / 360;
-	s = 0.0;
+  	stepWidth = (2 * pi) / 360;
+  	stepCounter = 0.0;
 
-	for (int i = 0; i < 360; i++)
-	{
-		Position.x = 40.0 * cos(s);
-		Position.y = 40.0 * sin(s);
-		robot.move.ptp(Position, Speed::full);
-		s = s + w;
-	}
-
-	w = (2 * pi) / 360;
-	s = 0.0;
-
-	for (int i = 0; i < 360; i++)
-	{
-		Position.x = 40.0 * cos(s);
-		Position.y = 40.0 * sin(s);
-		robot.move.ptp(Position, Speed::full);
-		s = s + w;
-	}
-
-	w = (2 * pi) / 360;
-	s = 0.0;
-
-	for (int i = 0; i < 360; i++)
-	{
-		Position.x = 40.0 * cos(s);
-		Position.y = 40.0 * sin(s);
-		robot.move.ptp(Position, Speed::full);
-		s = s + w;
-	}
-
+  	for (int i = 0; i < 360; i++)
+  	{
+    	Position.x = circleRadius * cos(stepCounter);
+    	Position.y = circleRadius * sin(stepCounter);
+    	robot.move.ptp(Position, Speed::full);
+    	stepCounter = stepCounter + stepWidth;
+  	}
 	robot.move.ptp(home, Speed::half);
 	robot.light.off();
 }

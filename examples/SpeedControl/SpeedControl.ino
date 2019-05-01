@@ -75,7 +75,7 @@ void loop()
   //Move Z-Axis
   robot.move.ptp(P10, Speed::full);
 
-  //Give the servos time to reach th position
+  //Give the servos time to reach the position
   //Wait for 0.5 second
   robot.functions.waitFor(500);
   

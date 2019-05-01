@@ -6,16 +6,17 @@ DeltaRobot::Space::Space()
 
 bool DeltaRobot::Move::checkWorkingSpace(DeltaRobot::Pos& position)
 {
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < 4; i++)
 	{
 		if (position.z >= levels[i].zmin && position.z < levels[i].zmax)
 		{
-			if (position.x >= levels[i].xmin && position.x <= levels[i].xmax)
+			float radius = 0.0F;
+
+			radius = sqrt((pow(position.x, 2.0F)) + (pow(position.y, 2.0F)));
+
+			if (radius <= levels[i].radius)
 			{
-				if (position.y >= levels[i].ymin && position.y <= levels[i].ymax)
-				{
-					return false;
-				}
+				return false;
 			}
 		}
 
@@ -25,36 +26,29 @@ bool DeltaRobot::Move::checkWorkingSpace(DeltaRobot::Pos& position)
 
 void DeltaRobot::Move::setStandardLevels()
 {
-	levels[0].zmin = 70;
-	levels[0].zmax = 80;
-	levels[0].xmin = -25;
-	levels[0].xmax = 25;
-	levels[0].ymin = -25;
-	levels[0].ymax = 25;
+	levels[0].zmin = 70.0F;
+	levels[0].zmax = 80.0F;
+	levels[0].radius = 25.0F;
 
-	levels[1].zmin = 80;
-	levels[1].zmax = 120;
-	levels[1].xmin = -32;
-	levels[1].xmax = 32;
-	levels[1].ymin = -32;
-	levels[1].ymax = 32;
+	levels[1].zmin = 80.0F;
+	levels[1].zmax = 100.0F;
+	levels[1].radius = 45.0F;
 
-	levels[2].zmin = 120;
-	levels[2].zmax = 130;
-	levels[2].xmin = -10;
-	levels[2].xmax = 10;
-	levels[2].ymin = -10;
-	levels[2].ymax = 10;
+	levels[2].zmin = 100.0F;
+	levels[2].zmax = 120.0F;
+	levels[2].radius = 35.0F;
+
+	levels[3].zmin = 120.0F;
+	levels[3].zmax = 130.0F;
+	levels[3].radius = 15.0F;
+
 }
 
-void DeltaRobot::Move::setWorkingSpaceLevel(int level, int xmin, int xmax, int ymin, int ymax, int zmin, int zmax)
+void DeltaRobot::Move::setWorkingSpaceLevel(int level, float zmin, float zmax, float radius)
 {
 	if (level > 0 && level <= 3)
 	{
-		levels[level - 1].xmin = xmin;
-		levels[level - 1].xmax = xmax;
-		levels[level - 1].ymin = ymin;
-		levels[level - 1].ymax = ymax;
+		levels[level - 1].radius = radius;
 		levels[level - 1].zmin = zmin;
 		levels[level - 1].zmax = zmax;
 	}

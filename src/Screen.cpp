@@ -71,7 +71,8 @@ void DeltaRobot::Screen::position()
 	display.printLine1(F("Y"), 7);
 	display.printLine1(F("Z"), 13);
 
-	DeltaRobot::Pos position = move.getPosition();
+	DeltaRobot::Pos position(0.0,0.0,0.0);
+	position = move.getPosition();
 	
 	display.printLine2(String(position.x), 0);
 	display.printLine2(F("  "), 4);
