@@ -53,27 +53,26 @@ void loop()
     if (select == 1) 
     {
       robot.light.on(Colour::blue,Intensity::max);
-      robot.functions.waitFor(2000);
+	    robot.functions.waitFor(2000);
     }
     if (select == 2) 
     {
       robot.light.on(Colour::red,Intensity::max);
-      robot.functions.waitFor(2000);
+	    robot.functions.waitFor(2000);
     }
     if (select == 3) 
     {
       robot.light.on(Colour::green,Intensity::max);
-      robot.functions.waitFor(2000);
+	    robot.functions.waitFor(2000);
     }
     if (select == 4) 
     {
       robot.light.on(Colour::white,Intensity::max);
-      robot.functions.waitFor(2000);
+	    robot.functions.waitFor(2000);
     }
     if (select == 5) 
     {
       robot.light.off();
-      robot.functions.waitFor(2000);
+	    robot.functions.waitFor(2000);
     }
-  }
-}
+  }}

@@ -43,6 +43,8 @@ void setup()
 //Loop
 void loop()
 {
+  //This example shows you how to use the basic move function of the robot
+
   //There are two ways to use the move function (ptp=point to point)
   //First we use the preset speed parameter (50%) 
   //Use example "SpeedControl" for changing the speed of the robot

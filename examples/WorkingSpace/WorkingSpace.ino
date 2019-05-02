@@ -37,10 +37,11 @@ void setup()
 //Loop
 void loop()
 {
+  //This example shows you the working space limits of the robot
+
   //There is a workingspace defined for this robot to protect it from damage
-  //The workingspace is defined into 4 levels
-  //Every level as a cyilinder on the Z-Axis
-  //In this example the robot moves arounf the workingspace on the defined levels
+  //The workingspace has 4 levels defined as a cylindrical form on the Z-Axis
+  //The example let the robot move around the workingspace levels
 
   //Level 1
   //Z-Axis: 70.0-79.0mm
@@ -144,9 +145,9 @@ void loop()
 
   stepCounter = 0.0;
   Position.y = 0.0;
-  Position.x = 35.0;
+  Position.x = 37.5;
   Position.z = 100.0;
-  circleRadius = 35.0;
+  circleRadius = 37.5;
   robot.move.ptp(Position, Speed::half);
   robot.functions.waitFor(1000);
 
@@ -160,9 +161,9 @@ void loop()
 
   stepCounter = 0.0;
   Position.y = 0.0;
-  Position.x = 35.0;
+  Position.x = 37.5;
   Position.z = 119.0;
-  circleRadius = 35.0;
+  circleRadius = 37.5;
   robot.move.ptp(Position, Speed::half);
   robot.functions.waitFor(1000);
 

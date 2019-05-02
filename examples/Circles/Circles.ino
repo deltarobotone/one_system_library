@@ -37,7 +37,7 @@ void setup()
 //Loop
 void loop()
 {
-  // This example shows you how to move a circle
+  // This example shows you how to move circles
 
   //Define pi
   float pi = 3.14;

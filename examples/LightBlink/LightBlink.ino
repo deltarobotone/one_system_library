@@ -37,7 +37,7 @@ void setup()
 //Loop
 void loop()
 {
-  //This example shows you how to use the blink funktions of the robot light
+  //This example shows you how to use the blink functions of the robot light
   //There are some useful predefined parameters for light functions
 
   //Parameters for the colour

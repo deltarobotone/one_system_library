@@ -8,10 +8,6 @@ DeltaRobot::Move::Move(int offsetServoA, int offsetServoB, int offsetServoC, int
 	tcpOffset.x = offsetTCPX;
 	tcpOffset.y = offsetTCPY;
 	tcpOffset.z = offsetTCPZ;
-	length.a = 31.0F;
-	length.b = 50.0F;
-	length.c = 90.0F;
-	length.d = 15.0F;
 }
 
 float DeltaRobot::Move::deltakinematic(float posX, float posY, float posZ, char servo)
@@ -57,7 +53,13 @@ float DeltaRobot::Move::deltakinematic(float posX, float posY, float posZ, char 
 
 void DeltaRobot::Move::setup()
 {
-	setStandardLevels();
+	setKinematics(31.0, 50.0, 90.0, 15.0);
+
+	setWorkingSpace(1, 70.0, 79.0, 25.0);
+	setWorkingSpace(2, 80.0, 99.0, 45.0);
+	setWorkingSpace(3, 100.0, 119.0, 37.5);
+	setWorkingSpace(4, 120.0, 130.0, 15.0);
+
 	motioncontroller.setup();
 }
 
@@ -129,7 +131,7 @@ DeltaRobot::ServoData DeltaRobot::Move::getAngles()
 	return servoAngle;
 }
 
-void DeltaRobot::Move::setKinematicsLength(float lengthA, float lengthB, float lengthC, float lengthD)
+void DeltaRobot::Move::setKinematics(float lengthA, float lengthB, float lengthC, float lengthD)
 {
 	length.a = lengthA;
 	length.b = lengthB;

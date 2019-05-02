@@ -42,6 +42,8 @@ void setup()
 //Loop
 void loop()
 {
+  //This example shows you how to control the speed of the robot
+
   //Speed parameters can set at the end of the move ptp functions
   //move.ptp(position x, position y, position z, speed v)
   //move.ptp(Pos p, speed v)

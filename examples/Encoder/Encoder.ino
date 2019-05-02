@@ -36,6 +36,8 @@ void setup()
 //Loop
 void loop()
 {
+  // This example shows you how to use the rotary encoder of the robot
+
   //Get the actual encoder value
   Value = robot.encoder.getValue();
 

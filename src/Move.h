@@ -64,7 +64,6 @@ namespace DeltaRobot
 		DeltaRobot::Pos tcpOffset;
 		float deltakinematic(float x, float y, float z, char servo);
 		bool checkWorkingSpace(DeltaRobot::Pos &position);
-		void setStandardLevels();
 		Space levels[4];
 		Kinematics length;
 
@@ -76,8 +75,8 @@ namespace DeltaRobot
 		bool ptp(float positionX, float positionY, float positionZ, float speed = Speed::half);
 		Pos getPosition();
 		ServoData getAngles();
-		void setKinematicsLength(float lengthA, float lengthB, float lengthC, float lengthD);
-		void setWorkingSpaceLevel(int level, float radius, float zmin, float zmax);
+		void setKinematics(float lengthA, float lengthB, float lengthC, float lengthD);
+		void setWorkingSpace(int level, float zmin, float zmax, float radius);
 	};
 	static DeltaRobot::Pos home(0.0F, 0.0F, 85.0F);
 }
