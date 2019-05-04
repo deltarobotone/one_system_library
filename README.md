@@ -18,7 +18,7 @@ If you want to learn something about the workingspace of the robot you can use t
 | **DeltaRobotOne**           |DeltaRobotOne                    |[Hello World](https://github.com/deltarobotone/one_system_library/wiki/Hello-World)|
 |                             |setup                            |[Hello World](https://github.com/deltarobotone/one_system_library/wiki/Hello-World)|
 |                             |setID                            |ToDo|
-|                             |getID                            |ToDo|
+|                             |getID                            |[Remote example](https://github.com/deltarobotone/one_system_library/wiki/Remote-example)|
 |                             |functions                        |[Functions example](https://github.com/deltarobotone/one_system_library/wiki/Functions-example)|
 |                             |move                             |[Move basic example](https://github.com/deltarobotone/one_system_library/wiki/Move-basic-example)<br>[Speed control example](https://github.com/deltarobotone/one_system_library/wiki/Speed-control-example)<br>[Kinematics example](https://github.com/deltarobotone/one_system_library/wiki/Kinematics-example)|
 |                             |light                            |[Light basic example](https://github.com/deltarobotone/one_system_library/wiki/Light-basic-example)<br>[Light blink example](https://github.com/deltarobotone/one_system_library/wiki/Light-blink-example)<br>[Light fade example](https://github.com/deltarobotone/one_system_library/wiki/Light-fade-example)|
