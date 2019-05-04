@@ -22,25 +22,35 @@ void DeltaRobot::ServoSetup::start()
 	{
 		light.heartbeat(Colour::magenta);
 
-		if (button.clicked(ButtonID::encoder) && step == 1)
+		if (step == 1)
 		{
-			move.setupPosition(45.0F);
-			screen.angles();
-			step = 2;
+			if (button.clicked(ButtonID::encoder))
+			{
+				move.setupPosition(45.0F);
+				screen.angles();
+				step = 2;
+			}
 		}
 
-		if (button.clicked(ButtonID::encoder) && step == 2)
+		if (step == 2)
 		{
-			move.setupPosition(90.0F);
-			screen.angles();
-			step = 3;
+			if (button.clicked(ButtonID::encoder))
+			{
+				move.setupPosition(90.0F);
+				screen.angles();
+				step = 3;
+			}
 		}
 
-		if (button.clicked(ButtonID::encoder) && step == 3)
+		if (step == 3)
 		{
-			move.ptp(home);
-			light.off();
-			break;
+			if (button.clicked(ButtonID::encoder))
+			{
+				move.ptp(home);
+				light.off();
+				break;
+			}
 		}
 	}
+
 }
