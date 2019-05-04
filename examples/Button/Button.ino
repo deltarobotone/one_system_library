@@ -50,7 +50,7 @@ void loop()
   //This example shows you how to use the buttons of the robot
   //There are some useful predefined parameters for button functions
 
-  //Parameters for the colour
+  //Parameters for the buttons
   //ButtonID::top
   //ButtonID::center
   //ButtonID::encoder
