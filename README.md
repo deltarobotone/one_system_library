@@ -4,7 +4,7 @@
 If you start the robot at the first time use the [full system demo](https://github.com/deltarobotone/one_system_library/wiki/Full-system-demo) to check out how Delta-Robot One works.
 
 The second step is to write your own applications for this robot using the system library.
-Do some examples first to learn how to use the library functions works! 
+Do some examples first to learn how to use the library functions works! Use the [one system library wiki](https://github.com/deltarobotone/one_system_library/wiki) to check out all examples.
 
 All examples are implemented in the one system library. If you use the arduino IDE navigate to examples->Delta-Robot One and check out what you can do with this smart little robot.
 
