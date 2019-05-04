@@ -136,7 +136,7 @@ If you want to learn something about the workingspace of the robot you can use t
 |                             |full                             |Display               |
 
 | **Namespace**               | **Constant**                    | **Value**            |
-| --------------------------- | ------------------------------- | -------------------- |
+| --------------------------- | ------------------------------- |:--------------------:|
 |**Pins**                     |servoA                           |10                    |
 |                             |servoB                           |9                     |
 |                             |servoC                           |6                     |
