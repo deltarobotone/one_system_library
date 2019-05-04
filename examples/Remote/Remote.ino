@@ -42,6 +42,13 @@ void setup()
 
   //Wait for 2 seconds
   robot.functions.waitFor(2000);
+
+  //Set robot ID
+  //The robot ID was used in the communication protocol
+  //More information: https://github.com/deltarobotone/one_easy_protocol
+  //If you want to communicate with more than one robot,
+  //every robot needs an unique ID.
+  robot.setID('1');
 }
 
 //Loop
