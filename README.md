@@ -13,8 +13,7 @@ We recommended the [move basic example](https://github.com/deltarobotone/one_sys
 If you want to learn something about the workingspace of the robot you can use the [workingspace](https://github.com/deltarobotone/one_system_library/wiki/Workingspace) demo to move around the working area of the robot.
 
 ## API-Class
-
-| **Class**                   | **Function/Object**             | **Example**          |
+| **Class**                   | **Function/Oject**              | **Example**          |
 | --------------------------- | ------------------------------- | -------------------- |
 | **DeltaRobotOne**           |DeltaRobotOne                    |[Hello World](https://github.com/deltarobotone/one_system_library/wiki/Hello-World)|
 |                             |setup                            |[Hello World](https://github.com/deltarobotone/one_system_library/wiki/Hello-World)|
@@ -33,7 +32,7 @@ If you want to learn something about the workingspace of the robot you can use t
 |                             |menu                             |[Menu example](https://github.com/deltarobotone/one_system_library/wiki/Menu-example)|
 |                             |livemode                         |ToDo|
 |                             |servosetup                       |ToDo|
-
+| ------------------------------- | ------------------------------- | ------------------------------- |
 
 ## API-Functions
 
@@ -102,6 +101,7 @@ If you want to learn something about the workingspace of the robot you can use t
 |                             |position                         |[Screen example](https://github.com/deltarobotone/one_system_library/wiki/Screen-example)|
 |**ServoSetup**               |start                            |ToDo|
 |**LiveMode**                 |start                            |ToDo|
+| ------------------------------- | ------------------------------- | ------------------------------- |
 
 ## Data-Classes
 
@@ -110,10 +110,11 @@ If you want to learn something about the workingspace of the robot you can use t
 |**Pos**                      |x                                |Move                  |
 |                             |y                                |Move                  |
 |                             |z                                |Move                  |
+| ------------------------------- | ------------------------------- | ------------------------------- |
 
 ## Constants
 
-| **Namespace**               | **Constant**                    | **API Class**        |
+| **Namespace**               | **Constant**                    | **API-Class**        |
 | --------------------------- | ------------------------------- | -------------------- |
 |**DeltaRobot**               |home                             |Move                  |
 |**Colour**                   |red                              |Light                 |
@@ -134,6 +135,7 @@ If you want to learn something about the workingspace of the robot you can use t
 |**Signs**                    |arrowLeft                        |Display               |
 |                             |arrowRight                       |Display               |
 |                             |full                             |Display               |
+| ------------------------------- | ------------------------------- | ------------------------------- |
 
 | **Namespace**               | **Constant**                    | **Value**            |
 | --------------------------- | ------------------------------- |:--------------------:|
@@ -153,3 +155,4 @@ If you want to learn something about the workingspace of the robot you can use t
 |                             |buttonEncoder                    |16                    |
 |                             |encoderA                         |3                     |
 |                             |encoderB                         |2                     |
+| ------------------------------- | ------------------------------- | ------------------------------- |
