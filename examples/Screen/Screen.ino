@@ -1,14 +1,23 @@
 #include "DeltaRobotOne.h"
 
+//Every robot has different values for servo-offset A,B,C and 
+//tcp-offset X,Y,Z because of the variance between the servo motors
+
+//Please adjust the offset values to your system properties
+//DeltaRobotOne robot(A,B,C,X,Y,Z,LCD);
+
+//If your display doesn't work try adress 0x3F
+
+//Help: https://github.com/deltarobotone/how_to_build_your_robot/wiki/Step-5:-Servo-assembly
+
 //Create the DeltaRobotOne-Object
 DeltaRobotOne robot(0, 0, 0, 0, 0, 0, 0x27);
 
 //Setup
 void setup()
 {
-  //Robot setup is required. 
-  //Use this line as the first line in all your sketches.
-  //Initialisation of some objects and parameters.
+  //The robot.setup() function is required. 
+  //Use this function in the first line of your setup function.
   robot.setup();
 
   //Set power cycle on for servo motors and light
@@ -22,11 +31,12 @@ void setup()
   //Print out some information on display
   robot.display.printLine1(F("Move Home..."));
 
-  //Move th robot to the home position (X=0.0,Y=0.0,Z=85.0)
+  //Move the robot to the home position (X=0.0,Y=0.0,Z=85.0)
   robot.move.ptp(home);
 
   //Clear the display
   robot.display.clear();
+
   //Print out some information on display
   robot.display.printLine1(F("Screen"));
 
