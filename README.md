@@ -78,7 +78,6 @@ If you want to learn something about the workingspace of the robot you can use t
 |                             |fadeSlow                         |[Light fade example](https://github.com/deltarobotone/one_system_library/wiki/Light-fade-example)|
 |                             |fadeReset                        |[Light fade example](https://github.com/deltarobotone/one_system_library/wiki/Light-fade-example)|
 |                             |heartbeat                        |[Light fade example](https://github.com/deltarobotone/one_system_library/wiki/Light-fade-example)|
-|**LiveMode**                 |start                            |ToDo|
 |**Menu**                     |setItem                          |[Menu example](https://github.com/deltarobotone/one_system_library/wiki/Menu-example)|
 |                             |start                            |[Menu example](https://github.com/deltarobotone/one_system_library/wiki/Menu-example)|
 |**Move**                     |setup                            |ToDo|
@@ -102,6 +101,7 @@ If you want to learn something about the workingspace of the robot you can use t
 |                             |angles                           |[Screen example](https://github.com/deltarobotone/one_system_library/wiki/Screen-example)|
 |                             |position                         |[Screen example](https://github.com/deltarobotone/one_system_library/wiki/Screen-example)|
 |**ServoSetup**               |start                            |ToDo|
+|**LiveMode**                 |start                            |ToDo|
 
 ## Data-Classes
 
@@ -134,19 +134,22 @@ If you want to learn something about the workingspace of the robot you can use t
 |**Signs**                    |arrowLeft                        |Display               |
 |                             |arrowRight                       |Display               |
 |                             |full                             |Display               |
-|**Pins**                     |servoA                           |-                     |
-|                             |servoB                           |-                     |
-|                             |servoC                           |-                     |
-|                             |mainPower                        |-                     |
-|                             |bluetoothPower                   |-                     |
-|                             |externalMotor                    |-                     |
-|                             |gripper                          |-                     |
-|                             |ledR                             |-                     |
-|                             |ledG                             |-                     |
-|                             |ledB                             |-                     |
-|                             |ledI                             |-                     |
-|                             |buttonTop                        |-                     |
-|                             |buttonCenter                     |-                     |
-|                             |buttonEncoder                    |-                     |
-|                             |encoderA                         |-                     |
-|                             |encoderB                         |-                     |
+
+| **Namespace**               | **Constant**                    | **Value**            |
+| --------------------------- | ------------------------------- | -------------------- |
+|**Pins**                     |servoA                           |10                    |
+|                             |servoB                           |9                     |
+|                             |servoC                           |6                     |
+|                             |mainPower                        |13                    |
+|                             |bluetoothPower                   |4                     |
+|                             |externalMotor                    |11                    |
+|                             |gripper                          |14                    |
+|                             |ledR                             |7                     |
+|                             |ledG                             |12                    |
+|                             |ledB                             |8                     |
+|                             |ledI                             |5                     |
+|                             |buttonTop                        |15                    |
+|                             |buttonCenter                     |17                    |
+|                             |buttonEncoder                    |16                    |
+|                             |encoderA                         |3                     |
+|                             |encoderB                         |2                     |
