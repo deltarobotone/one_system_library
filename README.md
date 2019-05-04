@@ -62,7 +62,7 @@ If you want to learn something about the workingspace of the robot you can use t
 |                             |control                          |ToDo|
 |**Functions**                |waitFor                          |[Functions example](https://github.com/deltarobotone/one_system_library/wiki/Functions-example)|
 |                             |pulse                            |[Encoder example](https://github.com/deltarobotone/one_system_library/wiki/Encoder-example)|
-|Gripper                      |open                             |[Gripper example](https://github.com/deltarobotone/one_system_library/wiki/Gripper-example)|
+|**Gripper**                  |open                             |[Gripper example](https://github.com/deltarobotone/one_system_library/wiki/Gripper-example)|
 |                             |close                            |[Gripper example](https://github.com/deltarobotone/one_system_library/wiki/Gripper-example)|
 |                             |getStatus                        |[Gripper example](https://github.com/deltarobotone/one_system_library/wiki/Gripper-example)|
 |**Light**                    |on                               |[Light basic example](https://github.com/deltarobotone/one_system_library/wiki/Light-basic-example)|
