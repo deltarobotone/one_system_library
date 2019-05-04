@@ -13,7 +13,7 @@ We recommended the [move basic example](https://github.com/deltarobotone/one_sys
 If you want to learn something about the workingspace of the robot you can use the [workingspace](https://github.com/deltarobotone/one_system_library/wiki/Workingspace) demo to move around the working area of the robot.
 
 ## API-Class
-| **Class**                   | **Function/Oject**              | **Example**          |
+| **Class**                   | **Function/Object**              | **Example**          |
 | --------------------------- | ------------------------------- | -------------------- |
 | **DeltaRobotOne**           |DeltaRobotOne                    |[Hello World](https://github.com/deltarobotone/one_system_library/wiki/Hello-World)|
 |                             |setup                            |[Hello World](https://github.com/deltarobotone/one_system_library/wiki/Hello-World)|
