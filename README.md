@@ -7,7 +7,7 @@ The second step is to write your own applications for this robot using the syste
 Do some examples first to learn how to use the library functions works! Use the [one system library wiki](https://github.com/deltarobotone/one_system_library/wiki) to check out all examples.
 
 All examples are implemented in the one system library. 
-If you use the arduino IDE navigate to **examples->OneSystemLibrary** and check out what you can do with this smart little robot.
+<br>If you use the arduino IDE navigate to **examples->OneSystemLibrary** and check out what you can do with this smart little robot.
 
 We recommended the [move basic example](https://github.com/deltarobotone/one_system_library/wiki/Move-basic-example) to do your own first moves with the robot.
 
