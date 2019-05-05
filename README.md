@@ -13,8 +13,9 @@ Do some examples first to learn how to use the library functions works! Use the 
 
 [**>>>one system library wiki<<<**](https://github.com/deltarobotone/one_system_library/wiki)
 
-All examples are implemented in the one system library. 
-<br>If you use the arduino IDE navigate to **File->Examples->OneSystemLibrary** and check out what you can do with this smart little robot.
+Examples are implemented in the one system library. If you use the arduino IDE navigate to 
+
+<br>**File->Examples->OneSystemLibrary**  and check out what you can do with this smart little robot.
 
 We recommended the move basic example to do your own first moves with the robot.
 
