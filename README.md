@@ -1,17 +1,28 @@
 <Img src="https://github.com/deltarobotone/image_database/blob/master/logos/logos%20(6).PNG" width=500>
 
+There is a short introduction to install this library using the official arduino IDE.
 
-If you start the robot at the first time use the [full system demo](https://github.com/deltarobotone/one_system_library/wiki/Full-system-demo) to check out how Delta-Robot One works.
+[**>>>install the library<<<**](https://github.com/deltarobotone/one_system_library/wiki/Install-the-library)
+
+If you start the robot at the first time use the full system demo to check out how Delta-Robot One works.
+
+[**>>>full system demo<<<**](https://github.com/deltarobotone/one_system_library/wiki/Full-system-demo)
 
 The second step is to write your own applications for this robot using the system library.
-Do some examples first to learn how to use the library functions works! Use the [one system library wiki](https://github.com/deltarobotone/one_system_library/wiki) to check out all examples.
+Do some examples first to learn how to use the library functions works! Use the one system library wiki to check out all examples.
+
+[**>>>one system library wiki<<<**](https://github.com/deltarobotone/one_system_library/wiki)
 
 All examples are implemented in the one system library. 
-<br>If you use the arduino IDE navigate to **examples->OneSystemLibrary** and check out what you can do with this smart little robot.
+<br>If you use the arduino IDE navigate to **File->Examples->OneSystemLibrary** and check out what you can do with this smart little robot.
 
-We recommended the [move basic example](https://github.com/deltarobotone/one_system_library/wiki/Move-basic-example) to do your own first moves with the robot.
+We recommended the move basic example to do your own first moves with the robot.
 
-If you want to learn something about the workingspace of the robot you can use the [workingspace](https://github.com/deltarobotone/one_system_library/wiki/Workingspace) demo to move around the working area of the robot.
+[**>>>move basic example<<<**](https://github.com/deltarobotone/one_system_library/wiki/Move-basic-example)
+
+If you want to learn something about the workingspace of the robot you can use the demo to move around the working area of the robot.
+
+[**>>>workingspace<<<**](https://github.com/deltarobotone/one_system_library/wiki/Workingspace)
 
 ## API-Class
 | **Class**                   | **Function/Object**              | **Example**          |
@@ -139,7 +150,7 @@ If you want to learn something about the workingspace of the robot you can use t
 | ------------------------------- | ------------------------------- | ------------------------------- |
 
 | **Namespace**               | **Constant**                    | **Value**            |
-| --------------------------- | ------------------------------- |:--------------------:|
+| --------------------------- | ------------------------------- | -------------------- |
 |**Pins**                     |servoA                           |10                    |
 |                             |servoB                           |9                     |
 |                             |servoC                           |6                     |
