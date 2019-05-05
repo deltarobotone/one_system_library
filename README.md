@@ -1,6 +1,6 @@
 <Img src="https://github.com/deltarobotone/image_database/blob/master/logos/logos%20(6).PNG" width=500>
 
-There is a short introduction to install this library using the official arduino IDE.
+How to install the library? Follow this link for a short introuction using th official arduino IDE:
 
 [**>>>install the library<<<**](https://github.com/deltarobotone/one_system_library/wiki/Install-the-library)
 
