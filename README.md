@@ -19,9 +19,13 @@ We recommended the move basic example to do your own first moves with the robot.
 
 [**>>>move basic example<<<**](https://github.com/deltarobotone/one_system_library/wiki/Move-basic-example)
 
-If you want to learn something about the workingspace of the robot you can use the demo to move around the working area of the robot.
+If you want to learn something about the workingspace of the robot check out the documentation or use the workingspace example:
 
-[**>>>workingspace<<<**](https://github.com/deltarobotone/one_system_library/wiki/Workingspace)
+[**>>>workingspace documentation<<<**](https://github.com/deltarobotone/how_to_build_your_robot/wiki/Workingspace)
+
+You can use the demo to move around the working area of the robot.
+
+[**>>>workingspace example<<<**](https://github.com/deltarobotone/one_system_library/wiki/Workingspace)
 
 ## API-Class
 | **Class**                   | **Function/Object**              | **Example**          |
