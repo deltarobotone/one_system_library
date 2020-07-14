@@ -14,16 +14,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Set Node.js 10.x
-        uses: actions/setup-node@v1.2.0
-        with:
-          node-version: 10.x
+      - name: Install Arduino CLI
+        uses: arduino/setup-arduino-cli@v1.0.0
+        
 
       - name: npm install
         run: npm install
 
-      - name: npm lint
-        run: npm run format-check
-
-      - name: npm test
-        run: npm test
+      - name: npm build
+        run: npm build
